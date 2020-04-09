@@ -22,30 +22,43 @@
   <body>
     <img src="images/logo.svg" alt="Base Apparel" class="mobile-logo p-5" />
     <div
-      class="container-fluid p-0 main-container text-center d-flex flex-column"
+      class="container-fluid p-0 main-container text-left d-flex flex-column flex-md-row"
     >
-      <div class="top">
-        <img src="images/hero-mobile.jpg" alt="" class="mobile-hero w-100" />
+      <div class="top order-md-2">
+        <img src="images/hero-mobile.jpg" class="mobile-hero w-100" />
+        <img src="images/hero-desktop.jpg" class="desktop-hero w-100 h-100" />
       </div>
-      <div class="bottom">
-        <img src="images/logo.svg" alt="Base Apparel" class="desktop-logo" />
-        <h1><span>We're</span> Coming Soon</h1>
-        <p class="mb-5">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <div class="input-block">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
+      <div class="bottom order-md-1">
+        <img
+          src="images/logo.svg"
+          alt="Base Apparel"
+          class="desktop-logo mb-5"
+        />
+        <div class="cta">
+          <h1><span>We're</span> Coming Soon</h1>
+          <p class="mb-5">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="input-block">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
 
-          <button class="arrow">
-            <img src="images/icon-arrow.svg" alt="Submit" />
-          </button>
+            <button class="arrow" id="submit">
+              <img src="images/icon-arrow.svg" alt="Submit" />
+            </button>
+            <img src="images/icon-error.svg" class="error-icon" id="error-icon" >
+          </div>
+        </div>
+        <div class="error-message pl-4 pt-3">
+          <p class="error-text">Please provide a valid email address</p>
+            
+          </p>
         </div>
       </div>
     </div>

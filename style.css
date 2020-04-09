@@ -24,6 +24,15 @@ body {
   display: none;
 }
 
+/* Top Section */
+.mobile-hero {
+  display: block;
+}
+
+.desktop-hero {
+  display: none;
+}
+
 /* Bottom Section */
 .bottom {
   padding: 3rem;
@@ -69,11 +78,37 @@ body {
   background: linear-gradient(35deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   outline: none;
   border: 0;
+  cursor: pointer;
+}
+
+/* Error Alert and Message */
+.error-icon {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  display: none;
+}
+
+.error-text {
+  color: hsl(0, 36%, 70%);
+  display: none;
 }
 
 /* Media Queries */
 /* Small Devices */
 @media (min-width: 576px) {
+}
+
+/* Medium Devices */
+@media (min-width: 768px) {
+  .bottom {
+    width: 55%;
+  }
+
+  .top {
+    width: 45%;
+  }
+
   .mobile-logo {
     display: none;
   }
@@ -81,14 +116,33 @@ body {
   .desktop-logo {
     display: block;
   }
-}
 
-/* Medium Devices */
-@media (min-width: 768px) {
+  .mobile-hero {
+    display: none;
+  }
+
+  .desktop-hero {
+    display: block;
+  }
+
+  .bottom .cta {
+    padding-top: 5rem;
+  }
 }
 
 /* Large Devices */
 @media (min-width: 992px) {
+  .desktop-logo {
+    padding-left: 5rem;
+  }
+
+  .bottom .cta {
+    padding: 5rem 5rem 0;
+  }
+
+  .error-text {
+    padding-left: 5rem;
+  }
 }
 
 /* XL Devices */
