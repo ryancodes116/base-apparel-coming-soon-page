@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* Core Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-container {
+  min-height: 100vh;
+}
+
+/* Logo */
+.mobile-logo {
+  display: block;
+}
+
+.desktop-logo {
+  display: none;
+}
+
+/* Bottom Section */
+.bottom {
+  padding: 3rem;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.bottom h1 {
+  font-size: 3.5rem;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+.bottom h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.bottom p {
+  color: hsl(0, 36%, 70%);
+}
+
+.bottom .input-block {
+  position: relative;
+}
+
+.bottom .input-block input {
+  border-radius: 80px;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  color: hsl(0, 6%, 24%);
+  border: 1px solid hsl(0, 36%, 70%);
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.bottom .input-block button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 80px;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(35deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  outline: none;
+  border: 0;
+}
+
+/* Media Queries */
+/* Small Devices */
+@media (min-width: 576px) {
+  .mobile-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    display: block;
+  }
+}
+
+/* Medium Devices */
+@media (min-width: 768px) {
+}
+
+/* Large Devices */
+@media (min-width: 992px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}
