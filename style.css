@@ -140,6 +140,10 @@ body {
     padding: 5rem 5rem 0;
   }
 
+  .bottom .input-block button {
+    width: 15%;
+  }
+
   .error-text {
     padding-left: 5rem;
   }
